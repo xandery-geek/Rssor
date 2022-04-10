@@ -29,7 +29,6 @@ export default {
 </script>
 
 <style lang='scss'>
-// @import "~bootstrap/scss/bootstrap.scss";
 
 body{
   margin: 0;
