@@ -1,4 +1,5 @@
-# rssor
+# Rssor
+> Rssor is a powerful rss reader, which can subscribe, manage rss and provide perfect reading experience.
 
 ## Project setup
 ```
