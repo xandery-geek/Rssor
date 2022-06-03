@@ -13,11 +13,15 @@
         RSS Sources
       </div>
       <div class="r-side-item">
-        <span class="r-span"><font-awesome-icon :icon="['fas', 'gear']" fixed-width /></span>
+        <span class="r-span"><font-awesome-icon :icon="['fas', 'sliders']" fixed-width /></span>
         Settings
       </div>
       <div class="r-category">
-          <span class="r-span">Categories</span>
+          <div style="position: relative;">
+            <span class="r-span">Categories</span>
+            <span style="position: absolute; right: 1rem;"><font-awesome-icon :icon="['fas', 'gear']" fixed-width /></span>
+          </div>
+
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
@@ -37,6 +41,11 @@
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
             Reading
+          </div>
+
+          <div class="r-side-item">
+            <span class="r-span"><font-awesome-icon :icon="['fas', 'plus']" fixed-width /></span>
+            Add Category
           </div>
         </div>
     </div>
@@ -51,7 +60,11 @@ export default {
 
 <style scoped lang='scss'>
 .r-main{
-  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  overflow: auto;
   background: $sidebar-bg;
   box-shadow: 2px 0 $sidebar-bg;
   padding: 0px;
@@ -61,6 +74,7 @@ export default {
   height: 2rem;
   line-height: 2rem;
   text-align: left;
+  overflow: hidden;
   .r-span{
    padding-left: 1rem;
    padding-right: 0.5rem;
@@ -74,6 +88,7 @@ export default {
 .r-category{
   text-align: left;
   margin-top: 2rem;
+
   .r-span{
     padding-left: 1rem;
   }
