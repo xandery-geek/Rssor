@@ -10,6 +10,11 @@
         <div class="row">
           <NavBar/>
         </div>
+        <div class="row">
+          <keep-alive>
+            <router-view></router-view>
+          </keep-alive>
+        </div>
       </div>
     </div>
   </div>

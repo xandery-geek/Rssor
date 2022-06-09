@@ -1,19 +1,18 @@
 <template>
-  <!-- Navbar -->
-  <div class="r-navbar">
-    Navbar
+  <div class="r-main">
+    Category
   </div>
 </template>
 
-
 <script>
 export default {
-  name: 'NavBar'
+  name: 'CategoryBoard'
 }
 </script>
 
 <style scoped>
-.r-navbar{
+
+.r-main{
   color: black;
 }
 

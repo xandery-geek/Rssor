@@ -1,25 +1,37 @@
 import { createApp } from 'vue'
+import { createRouter, createWebHistory } from "vue-router"
+
 import App from './App.vue'
+import routes from './render/routes.js';
+
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
-import { faUser } from '@fortawesome/free-regular-svg-icons'
-import { faChartSimple, faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus} from '@fortawesome/free-solid-svg-icons'
+import { faUser, faStar } from '@fortawesome/free-regular-svg-icons'
+import { faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faCube} from '@fortawesome/free-solid-svg-icons'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faUser)
-library.add(faChartSimple, faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus)
+library.add(faUser, faStar)
+library.add(faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faCube)
 
+
+// create Router
+const router = createRouter({
+    history: createWebHistory(),
+    routes : routes
+})
 
 // create App
 const app = createApp(App)
 
-// use components
+// add components
 app.component('font-awesome-icon', FontAwesomeIcon)
 
+// use 
+app.use(router)
 app.mount('#app')

@@ -1,19 +1,18 @@
 <template>
-  <!-- Navbar -->
-  <div class="r-navbar">
-    Navbar
+  <div class="r-main">
+    DashBoard
   </div>
 </template>
 
-
 <script>
 export default {
-  name: 'NavBar'
+  name: 'DashBoard'
 }
 </script>
 
 <style scoped>
-.r-navbar{
+
+.r-main{
   color: black;
 }
 

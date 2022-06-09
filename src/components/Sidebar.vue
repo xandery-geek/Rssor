@@ -5,8 +5,8 @@
         User name
       </div>
       <div class="r-side-item">
-        <span class="r-span"><font-awesome-icon :icon="['fas','chart-simple']" fixed-width /></span>
-        DashBoard
+        <span class="r-span"><font-awesome-icon :icon="['far','star']" fixed-width /></span>
+        Favorite
       </div>
       <div class="r-side-item">
         <span class="r-span"><font-awesome-icon :icon="['fas', 'rss']" fixed-width /></span>
@@ -21,26 +21,31 @@
             <span class="r-span">Categories</span>
             <span style="position: absolute; right: 1rem;"><font-awesome-icon :icon="['fas', 'gear']" fixed-width /></span>
           </div>
+          
+          <div class="r-side-item">
+            <span class="r-span"><font-awesome-icon :icon="['fas', 'cube']" fixed-width /></span>
+            All articles
+          </div>
 
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            Reading
+            Paper
           </div>
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            Reading
+            Game
           </div>
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            Reading
+            News
           </div>
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            Reading
+            Sports
           </div>
 
           <div class="r-side-item">
