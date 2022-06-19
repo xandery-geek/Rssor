@@ -9,21 +9,23 @@ import routes from './render/routes.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
-import { faUser, faStar } from '@fortawesome/free-regular-svg-icons'
-import { faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faCube} from '@fortawesome/free-solid-svg-icons'
+import { faUser, faStar, faEye } from '@fortawesome/free-regular-svg-icons'
+import { faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faCube, faFolderOpen, 
+    faArrowRotateRight, faMagnifyingGlass, faEllipsis } from '@fortawesome/free-solid-svg-icons'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faUser, faStar)
-library.add(faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faCube)
+library.add(faUser, faStar, faEye)
+library.add(faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faCube, faFolderOpen, 
+    faArrowRotateRight, faMagnifyingGlass, faEllipsis)
 
 
 // create Router
 const router = createRouter({
     history: createWebHistory(),
-    routes : routes
+    routes: routes
 })
 
 // create App

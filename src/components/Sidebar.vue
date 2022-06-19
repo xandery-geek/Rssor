@@ -2,19 +2,19 @@
     <div class="r-main">
       <div class="r-side-item">
         <span class="r-span"><font-awesome-icon :icon="['far','user']" fixed-width /></span>
-        User name
+        <span>Username</span>
       </div>
       <div class="r-side-item">
         <span class="r-span"><font-awesome-icon :icon="['far','star']" fixed-width /></span>
-        Favorite
+        <span>Favorite</span>
       </div>
       <div class="r-side-item">
         <span class="r-span"><font-awesome-icon :icon="['fas', 'rss']" fixed-width /></span>
-        RSS Sources
+        <span>RSS Sources</span>
       </div>
       <div class="r-side-item">
         <span class="r-span"><font-awesome-icon :icon="['fas', 'sliders']" fixed-width /></span>
-        Settings
+        <span>Settings</span>
       </div>
       <div class="r-category">
           <div style="position: relative;">
@@ -24,33 +24,33 @@
           
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'cube']" fixed-width /></span>
-            All articles
+            <span>All articles</span>
           </div>
 
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            Paper
+            <span>Paper</span>
           </div>
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            Game
+            <span>Game</span>
           </div>
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            News
+            <span>Paper</span>
           </div>
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
             <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            Sports
+            <span>Sports</span>
           </div>
 
           <div class="r-side-item">
             <span class="r-span"><font-awesome-icon :icon="['fas', 'plus']" fixed-width /></span>
-            Add Category
+            <span>Add Category</span>
           </div>
         </div>
     </div>
@@ -80,6 +80,7 @@ export default {
   line-height: 2rem;
   text-align: left;
   overflow: hidden;
+  cursor: pointer;
   .r-span{
    padding-left: 1rem;
    padding-right: 0.5rem;
