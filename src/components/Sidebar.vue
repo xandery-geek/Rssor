@@ -23,7 +23,7 @@
           </div>
           
           <div class="r-side-item">
-            <span class="r-span"><font-awesome-icon :icon="['fas', 'cube']" fixed-width /></span>
+            <span class="r-span"><font-awesome-icon :icon="['far', 'newspaper']" fixed-width /></span>
             <span>All articles</span>
           </div>
 

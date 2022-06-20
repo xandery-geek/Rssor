@@ -38,11 +38,10 @@ export default {
 <style scoped lang='scss'>
 .r-navbar{
   display: flex;
-  color: black; 
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  position: fixed;
+  width: calc(100% - 200px);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: #fff;
   box-shadow: inset 0 -1px 0 #efefef;
 
   span:first-child{

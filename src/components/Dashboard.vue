@@ -14,7 +14,7 @@
             <p> Dec 2021</p>
             <div class="r-operation">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add star"><font-awesome-icon :icon="['far','star']"/></span>
-              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fa','ellipsis']" /></span>
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fas','ellipsis']" /></span>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@
             <p> Dec 2021</p>
             <div class="r-operation">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add star"><font-awesome-icon :icon="['far','star']"/></span>
-              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fa','ellipsis']" /></span>
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fas','ellipsis']" /></span>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@
             <p> Dec 2021</p>
             <div class="r-operation">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add star"><font-awesome-icon :icon="['far','star']"/></span>
-              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fa','ellipsis']" /></span>
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fas','ellipsis']" /></span>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
             <p> Dec 2021</p>
             <div class="r-operation">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add star"><font-awesome-icon :icon="['far','star']"/></span>
-              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fa','ellipsis']" /></span>
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fas','ellipsis']" /></span>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
             <p> Dec 2021</p>
             <div class="r-operation">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add star"><font-awesome-icon :icon="['far','star']"/></span>
-              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fa','ellipsis']" /></span>
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fas','ellipsis']" /></span>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@
             <p> Dec 2021</p>
             <div class="r-operation">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add star"><font-awesome-icon :icon="['far','star']"/></span>
-              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fa','ellipsis']" /></span>
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fas','ellipsis']" /></span>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@
             <p> Dec 2021</p>
             <div class="r-operation">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add star"><font-awesome-icon :icon="['far','star']"/></span>
-              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fa','ellipsis']" /></span>
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fas','ellipsis']" /></span>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
             <p> Dec 2021</p>
             <div class="r-operation">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add star"><font-awesome-icon :icon="['far','star']"/></span>
-              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fa','ellipsis']" /></span>
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom"><font-awesome-icon :icon="['fas','ellipsis']" /></span>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ export default {
 <style scoped lang="scss">
 
 .r-main{
-  margin-top: 3rem;
+  margin-top: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
 

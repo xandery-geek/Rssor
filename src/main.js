@@ -9,16 +9,16 @@ import routes from './render/routes.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
-import { faUser, faStar, faEye } from '@fortawesome/free-regular-svg-icons'
-import { faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faCube, faFolderOpen, 
+import { faUser, faStar, faEye, faNewspaper } from '@fortawesome/free-regular-svg-icons'
+import { faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faFolderOpen, 
     faArrowRotateRight, faMagnifyingGlass, faEllipsis } from '@fortawesome/free-solid-svg-icons'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faUser, faStar, faEye)
-library.add(faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faCube, faFolderOpen, 
+library.add(faUser, faStar, faEye, faNewspaper)
+library.add(faRss, faGear, faAngleUp, faAngleDown, faSliders, faPlus, faFolderOpen, 
     faArrowRotateRight, faMagnifyingGlass, faEllipsis)
 
 

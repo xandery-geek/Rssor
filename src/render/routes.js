@@ -1,5 +1,5 @@
 import DashBoard from '../components/Dashboard.vue'
-import CategoryBoard from '../components/Categories.vue'
+import ArticlePage from '../components/Article.vue'
 
 
 export default [
@@ -11,6 +11,11 @@ export default [
     {
         path: '/cagtegory',
         name: 'category',
-        component: CategoryBoard
+        component: DashBoard
+    },
+    {
+        path: '/article',
+        name: 'article',
+        component: ArticlePage
     }
 ];
