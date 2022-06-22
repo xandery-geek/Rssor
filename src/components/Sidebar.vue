@@ -28,24 +28,23 @@
           </div>
 
           <div class="r-side-item">
-            <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
-            <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            <span>Paper</span>
+            <div data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <DropDwonItem message="Paper"></DropDwonItem>
+            </div>
+          </div>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
           </div>
           <div class="r-side-item">
-            <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
-            <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            <span>Game</span>
+            <DropDwonItem message="Game"></DropDwonItem>
           </div>
           <div class="r-side-item">
-            <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
-            <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            <span>Paper</span>
+            <DropDwonItem message="Reading"></DropDwonItem>
           </div>
           <div class="r-side-item">
-            <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span>
-            <!-- <span class="r-span"><font-awesome-icon :icon="['fas', 'angle-down']" fixed-width /></span> -->
-            <span>Sports</span>
+            <DropDwonItem message="Sports"></DropDwonItem>
           </div>
 
           <div class="r-side-item">
@@ -58,8 +57,14 @@
 
 
 <script>
+import 'bootstrap/dist/js/bootstrap.min.js'
+import DropDwonItem from './DropDownItem.vue'
+
 export default {
   name: 'SideBar',
+  components: {
+    DropDwonItem
+  }
 }
 </script>
 
@@ -76,7 +81,6 @@ export default {
 }
 
 .r-side-item{
-  height: 2rem;
   line-height: 2rem;
   text-align: left;
   overflow: hidden;

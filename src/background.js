@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, protocol, BrowserWindow } from 'electron'
+import { app, protocol, BrowserWindow, Menu } from 'electron'
 import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer'
 import { createWindow } from './main/main-win.js'
 
@@ -39,6 +39,7 @@ app.on('ready', async () => {
     }
   }
   createWindow()
+  Menu.setApplicationMenu(null);
 })
 
 // Exit cleanly on request from parent process in development mode.
