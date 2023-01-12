@@ -5,10 +5,10 @@
     <div id="dashboard-card">
       <a-card hoverable v-for="article in articles" :key="article">
         <div class="r-cover">
-          <img class="r-cover-img" :src="article.cover" />
+          <img class="r-cover-img" :src="article.cover" @click="onOpenArticle(article.id)" />
         </div>
         <div class="r-text">
-          <div class="r-title">{{ article.title }}</div>
+          <div class="r-title" @click="onOpenArticle(article.id)">{{ article.title }}</div>
           <div class="r-feed">
             <span><icon-font type="icon-star"/></span>
             &nbsp; • &nbsp;
@@ -37,6 +37,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'DashBoard',
 
@@ -53,7 +54,7 @@ export default {
           favorite: false,
         },
         {
-          id: 2,
+          id: 3,
           title: '兜兜转转，我还是想要一台无人机', 
           feed: 'AI', 
           cover: 'https://cdn.sspai.com/article/ecf50b5f-7c5d-d514-f8d6-c3959b88df5c.jpg',
@@ -62,7 +63,7 @@ export default {
           favorite: false,
         },
         {
-          id: 2,
+          id: 4,
           title: '兜兜转转，我还是想要一台无人机', 
           feed: 'AI', 
           cover: 'https://cdn.sspai.com/article/ecf50b5f-7c5d-d514-f8d6-c3959b88df5c.jpg',
@@ -72,6 +73,13 @@ export default {
         },
       ]
     }
+  },
+
+  methods: {
+    onOpenArticle(id) {
+      console.log('Article:', id);
+      window.ipcRenderer.onOpenArticle(id);
+    },
   }
 }
 </script>

@@ -16,9 +16,12 @@ import {
 } from '@/utils/platform';
 import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer';
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib';
-import clc from 'cli-color';
+import { registerGlobalShortcut } from '@/electron/globalShortcut'
 
-import registerGlobalShortcut from '@/electron/globalShortcut'
+import clc from 'cli-color';
+import path from 'path';
+
+import { initIpcMain } from '@/electron/ipcMain';
 
 const log = text => {
   console.log(`${clc.blueBright('[background.js]')} ${text}`);
@@ -68,14 +71,15 @@ class Background {
   }
 
   createWindow() {
+    log('creating app window');
+
     const options = {
       width: 1200,
       height: 800,
       webPreferences: {
         // Use pluginOptions.nodeIntegration, leave this alone
         // See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration for more info
-        nodeIntegration: process.env.ELECTRON_NODE_INTEGRATION,
-        contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION
+        preload: path.join(__dirname, 'preload.js'),
       }
     }
   
@@ -125,9 +129,10 @@ class Background {
       this.handleWindowEvents();
       
       //register gloabl shortcut
-      registerGlobalShortcut(this.window)
+      registerGlobalShortcut(this.window);
 
       // init ipcMain
+      initIpcMain(this.window);
 
       // create menu
       Menu.setApplicationMenu(null);
